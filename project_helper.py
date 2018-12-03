@@ -58,8 +58,7 @@ def print_dataframe(df, n_rows=10, n_columns=3):
         cells={
             'values': formatted_df.reset_index().values.T,
             'line': {'color': helper.color_scheme['df_line']},
-            'fill': {'color': [helper.color_scheme['df_header'], helper.color_scheme['df_value']]},
-            'font': {'size': 13}})
+            'fill': {'color': [helper.color_scheme['df_header'], helper.color_scheme['df_value']]}})
 
     offline_py.iplot([trace], config=config)
 
